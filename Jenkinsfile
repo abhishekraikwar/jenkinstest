@@ -8,7 +8,7 @@ pipeline{
 			agent {
             	docker {
           		label 'docker'
-         		image 'maven:3.6.3'}
+         		image 'maven:3.6.3'}}
 			steps{
 				sh 'mvn --version'
 				echo "Build"
