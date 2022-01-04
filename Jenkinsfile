@@ -16,17 +16,18 @@ pipeline{
 				echo "Integration Test"
 			}
 		}
-		post
-		{
-			always{
-				echo "always"
-			}
-			successful{
-				echo "Successful"
-			}
-			failure{
-				echo "Unsuccessful"
-			}
+	}
+	post
+	{
+		always{
+			echo "always"
+		}
+		successful{
+			echo "Successful"
+		}
+		failure{
+			echo "Unsuccessful"
 		}
 	}
+	
 }
